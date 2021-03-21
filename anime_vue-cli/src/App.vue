@@ -9,7 +9,7 @@
    <router-view />
   </main>
 <footer>
-github:
+github:https://github.com/wan18005/anime
 </footer>
 
 
