@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/">
-      <h1>My Movie Watch List </h1>
+      <h1>The<strong>Movie</strong>Database</h1>
     </router-link>
   </header>
   <main>
@@ -36,7 +36,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 10px 16px;
-  background-color: #2C3D4E;
+  background-color: #080101d5;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
   h1 {
     color: #FFF;
@@ -44,10 +44,14 @@ header {
     span {
       color: #42B883;
     }
+    strong {
+			color: rgba(4, 113, 255, 0.877);
+		}
   }
 }
 footer
-{
-  padding: 250px 2px;
+{ 
+  color:#FFF;
+  padding: 20px 2px;
 }
 </style>

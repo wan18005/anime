@@ -5,15 +5,15 @@
       <router-link to="/movie/tt0409591">  <!-- default naturo id-->
         <img src="https://i.pinimg.com/originals/8d/75/42/8d75425d53111dbf7e2423b1ddba4245.jpg" alt="Naruto Poster" class="featured-img" />
         <div class="detail">
-          <h3>Naruto</h3> 
-          <p>Many years ago, in the hidden village of Konoha, lived a great demon fox. When it swung one of it's nine tails, a tsunami occurred. The fourth hokage sealed this demon fox inside a boy in exchange for his own life. Naruto was that boy, and he grew up with no family, and the villagers hated him thinking that he himself was the demon fox. Naruto's dream is to become Hokage, and have the villagers acknowledge him.</p>
+          <h3>Welcome to TheMovieDatabase</h3> 
         </div>
       </router-link>
   </div>
 <!-- Search bar -->  
     <form @submit.prevent="SearchMovies()" class="search-box">
-    <input type="text" placeholder="What show are you looking for? " v-model="search"/>
-    <input type="submit" value="Search" />
+    <input type="text" placeholder="Search for the movie: " v-model="search"/>
+    <!-- <input type="submit" value="Search" /> -->
+    
     </form>
 <!-- List -->  
 <div class="movies-list">
@@ -70,7 +70,7 @@ export default {
     .featured-img 
     {
       display: block;
-      width: 50%;
+      width: 100%;
       height: 50%;
       object-fit: cover;
       position: relative;
@@ -84,8 +84,8 @@ export default {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 16px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
       z-index: 1;
       // title
       h3 {
@@ -106,7 +106,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 16px;
     // 
     input 
     {
@@ -118,9 +118,9 @@ export default {
       &[type="text"] {
         width: 100%;
         color: #FFF;
-        background-color: #496583;
+        background-color: #080101d5;
         font-size: 20px;
-        padding: 10px 16px;
+        padding: 16px;
         border-radius: 8px;
         margin-bottom: 15px;
         transition: 0.4s;
@@ -135,7 +135,7 @@ export default {
       &[type="submit"] {
         width: 100%;
         max-width: 300px;
-        background-color: #010008;
+        background-color: #080101d5;
         padding: 16px;
         border-radius: 8px;
         color: #FFF;
@@ -164,10 +164,11 @@ export default {
         .product-image {
           position: relative;
           display: block;
+
           img {
             display: block;
             width: 100%;
-            height: 500px;
+            height: 100%px;
             object-fit: cover;
           }
           // little box in side movie
